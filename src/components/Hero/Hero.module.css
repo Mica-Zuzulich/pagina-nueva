@@ -1,0 +1,29 @@
+.hero {
+  background: url('/images/hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: var(--color-principal);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

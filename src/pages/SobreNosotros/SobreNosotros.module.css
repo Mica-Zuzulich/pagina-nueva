@@ -1,0 +1,23 @@
+.sobre {
+  padding: 5rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.certificaciones {
+  list-style: none;
+  padding: 0;
+}
+
+.certificaciones li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
