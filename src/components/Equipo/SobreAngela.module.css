@@ -1,0 +1,58 @@
+.sobreAngela {
+  background-color: #fff;
+  padding: 4rem 2rem;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.imagen {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.texto {
+  flex: 1 1 400px;
+}
+
+.texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.boton {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}

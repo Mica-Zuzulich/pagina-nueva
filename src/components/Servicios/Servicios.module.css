@@ -9,17 +9,55 @@
   margin-bottom: 2rem;
 }
 
+/* Contenedor de las tarjetas */
 .grid {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center; /* Centra horizontalmente */
+  flex-wrap: wrap;         /* Permite que bajen en móviles */
+  gap: 1.5rem;             /* Espacio entre tarjetas */
 }
 
+/* Cada tarjeta */
 .card {
+  flex: 1 1 200px;      /* Crece hasta llenar el espacio, mínimo 200px */
+  max-width: 220px;     /* Ancho máximo de cada tarjeta */
   background-color: #f9f9f9;
   border-radius: 12px;
-  padding: 2rem;
-  width: 280px;
+  padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+/* Imagen dentro de la card (comentada por ahora) */
+.cardImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Efecto hover opcional */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 180px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
 }

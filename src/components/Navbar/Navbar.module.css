@@ -1,28 +1,59 @@
 .header {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+/* Franja superior */
+.topBar {
+  display: flex;
+  justify-content: flex-end; /* 👈 Esto alinea los íconos a la derecha */
+  padding: 6px 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #0077b6;
+}
+
+/* Navbar principal */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-  background: white;
-  border-bottom: 1px solid #ddd;
+  padding: 15px 40px;
 }
 
 .logo {
-  height: 50px;
+  width: 130px;
+  height: 45px;
+  background-color: #ddd; /* espacio para el logo */
+  border-radius: 6px;
 }
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 30px;
 }
 
 .link {
   text-decoration: none;
-  color: #222;
+  color: #333;
   font-weight: 500;
-  transition: color 0.3s;
 }
 
 .link:hover {
-  color: var(--color-principal);
+  color: #0077b6;
 }

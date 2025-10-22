@@ -1,0 +1,59 @@
+.intro {
+  background-color: #fff;
+  padding: 80px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  gap: 50px;
+}
+
+.imagen {
+  flex: 1;
+}
+
+.casaImg {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.texto {
+  flex: 1;
+  color: #00123a;
+}
+
+.texto h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00123a;
+}
+
+.texto span {
+  color: #c2865a;
+}
+
+.texto p {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.boton {
+  margin-top: 25px;
+  background-color: #00123a;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton:hover {
+  background-color: #c2865a;
+}

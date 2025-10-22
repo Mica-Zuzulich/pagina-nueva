@@ -1,0 +1,56 @@
+.inversiones {
+  background-color: #f5f5f5;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.texto {
+  flex: 1 1 300px;
+}
+
+.texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.texto h2 span {
+  color: #13365e; 
+}
+
+.texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.boton {
+  padding: 0.8rem 2rem;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #005bb5;
+}
+
+.imagen {
+  flex: 1 1 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}
