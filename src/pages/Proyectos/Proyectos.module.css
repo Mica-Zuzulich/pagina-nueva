@@ -34,3 +34,10 @@ button {
   border-radius: 6px;
   cursor: pointer;
 }
+.logoMembresia {
+  width: 140px;
+  height: 80px;
+  margin: 15px auto 0;
+  background-color: #ddd; /* marcador de lugar para el logo */
+  border-radius: 10px;
+}

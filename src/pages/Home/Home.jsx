@@ -4,7 +4,9 @@ import Servicios from '../../components/Servicios/Servicios';
 import Inversiones from '../../components/Inversiones/Inversiones';
 import PorqueElegirnos from '../../components/Equipo/PorqueElegirnos';
 import SobreAngela from '../../components/Equipo/SobreAngela';
-import ContactoForm from '../../components/ContactoForm/ContactoForm';
+import ContactoForm from '../../pages/Contacto/Contacto';
+import Footer from '../../components/Footer/Footer';
+
 export default function Home() {
   return (
     <>

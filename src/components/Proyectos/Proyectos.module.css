@@ -14,42 +14,89 @@
   margin: 0 auto 2rem auto;
   font-size: 1rem;
 }
-
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 2rem;
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* oscurece un poco */
+  padding: 60px 20px;
+  border-radius: 20px;
+  display: inline-block;
 }
 
-.card {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  width: 280px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.banners {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.banner {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.card h3 {
-  margin-bottom: 1rem;
+.miami {
+  background-image: url('/imagenes/miami.jpg'); /* Imagen de fondo comentada */
 }
 
-.card p {
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+.panama {
+  background-image: url('/imagenes/panama.jpg'); /* Imagen de fondo comentada */
 }
 
-.card button {
-  padding: 0.5rem 1rem;
-  background-color: #0070f3;
-  color: #fff;
+.lisboa {
+  background-image: url('/imagenes/lisboa.jpg'); /* Imagen de fondo comentada */
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background: #001a57;
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-.card button:hover {
-  background-color: #005bb5;
+button:hover {
+  background: #0033aa;
+}
+.creaTuFuturo {
+  background-color: #f0f0f0; /* o el color que combine */
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.membresia {
+  text-align: center;
+  padding: 40px 20px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.logoMembresia {
+  width: 150px;
+  height: 80px;
+  margin: 10px auto 0;
+  background-color: #ddd; /* solo para marcar el lugar del logo */
+  border-radius: 8px;
 }

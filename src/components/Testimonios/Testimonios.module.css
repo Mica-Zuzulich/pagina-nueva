@@ -1,0 +1,49 @@
+
+.testimoniosSection {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+}
+
+.testimonioCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 700px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.testimonioContenido {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.testimonioContenido p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.testimonioContenido h4 {
+  color: #444;
+  font-weight: 600;
+}
+
+.flecha {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.flecha:hover {
+  color: #c59858; /* dorado suave */
+}

@@ -1,23 +1,219 @@
-.sobre {
-  padding: 5rem 2rem;
-  background: white;
+.bannerSobre {
+  width: 100%;
+  background-color: #f5f5f5; /* color suave de fondo */
+  text-align: center;
+  padding: 80px 20px;
+  color: #222;
+}
+
+.bannerSobre h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.bannerSobre p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}.perfilAngela {
+  width: 100%;
+  padding: 60px 20px;
+}
+.perfilAngela .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;   /* ancho máximo del bloque */
+  margin: 0 auto;
+  flex-wrap: wrap;     /* para que en móvil se acomode vertical */
+}
+/* cheee fran fijate pq la imagen al estar comentada no quedaaaaa hasta que la insertemos y el texto se empuje al costado 
+/* Imagen */
+.perfilAngela .imagen {
+  flex: 1 1 45%;       /* ocupa casi la mitad izquierda */
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Texto */
+.perfilAngela .texto {
+  flex: 1 1 50%;       /* ocupa la mitad derecha */
+  max-width: 600px;    /* no deje que se estire demasiado */
+}
+
+
+.perfilAngela h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.perfilAngela p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Botón */
+.perfilAngela .botonZoom {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.perfilAngela .botonZoom:hover {
+  background-color: #0056b3;
+}
+.visionMisionUnica {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visionMisionUnica .overlay {
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.visionMisionUnica .textos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.visionMisionUnica .textoBloque {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.visionMisionUnica h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.visionMisionUnica p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .visionMisionUnica .textos {
+    flex-direction: column;
+  }
+
+  .visionMisionUnica .textoBloque {
+    margin-bottom: 20px;
+  }
+}
+.certificacionesSection {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.certificacionesSection .container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.certificacionesSection .iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certificacionesSection .iconos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.certificacionesSection .textoCertificaciones {
+  flex: 1;
+}
+
+.certificacionesSection .textoCertificaciones h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.certificacionesSection .textoCertificaciones ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificacionesSection .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificacionesSection .iconos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .certificacionesSection .iconos img {
+    margin: 10px;
+  }
+
+  .certificacionesSection .textoCertificaciones {
+    text-align: center;
+    margin-top: 20px;
+  }
+}.premiosHonoresSection {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.logosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
   text-align: center;
 }
 
-.textos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin: 2rem 0;
+.logoItem img {
+  max-width: 80px;
+  margin-bottom: 15px;
 }
 
-.certificaciones {
-  list-style: none;
-  padding: 0;
+.logoItem p {
+  font-size: 0.9rem;
+  color: #555;
 }
 
-.certificaciones li {
-  margin: 0.5rem 0;
-  font-weight: 500;
-}
+
